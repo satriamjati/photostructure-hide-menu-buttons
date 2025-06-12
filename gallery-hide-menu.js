@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (li) li.remove();
       }
     });
+    const resyncLink = document.querySelector('a[title="Re-import all the files for this asset"][data-key="r"]');
+    if (resyncLink) {
+      resyncLink.remove();
+    }
   }
 
   removeDangerItems();
